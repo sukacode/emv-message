@@ -17,6 +17,7 @@ public class EmvMessageServiceTest {
         emvRepository.data[2] = new EmvMessage("9F26");
         emvRepository.data[3] = new EmvMessage("9F27");
         emvRepository.data[4] = new EmvMessage("95");
+        emvRepository.data[4] = new EmvMessage("9B");
         emvRepository.data[5] = new EmvMessage("9F06");
         emvRepository.data[6] = new EmvMessage("57");
         emvRepository.data[7] = new EmvMessage("5A");
