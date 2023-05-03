@@ -4,7 +4,7 @@ import entity.EmvMessage;
 
 public class EmvRepositoryImpl implements EmvRepository{
 
-    public EmvMessage[] data = new EmvMessage[21];
+    public EmvMessage[] data = new EmvMessage[30];
 
     @Override
     public EmvMessage[] getAll() {
