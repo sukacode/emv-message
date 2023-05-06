@@ -45,9 +45,38 @@ public class EmvMessageServiceTest {
         emvRepository.data[28] = new EmvMessage("9A");
         emvRepository.data[28] = new EmvMessage("9F37");
 
+        emvRepository.desc[0] = new EmvMessage("Application Identifier (AID)");
+        emvRepository.desc[1] = new EmvMessage("Issuer Application Data");
+        emvRepository.desc[2] = new EmvMessage("Application Cryptogram");
+        emvRepository.desc[3] = new EmvMessage("Cryptogram Information Data");
+        emvRepository.desc[4] = new EmvMessage("Terminal Verification Results");
+        emvRepository.desc[5] = new EmvMessage("Track 2 Equivalent Data");
+        emvRepository.desc[6] = new EmvMessage("Application Primary Account Number (PAN)");
+        emvRepository.desc[7] = new EmvMessage("Application Primary Account Number (PAN) Sequence Number");
+        emvRepository.desc[8] = new EmvMessage("Application Primary Account Number (PAN) Sequence Number");
+        emvRepository.desc[9] = new EmvMessage("Application Primary Account Number (PAN) Sequence Number");
+        emvRepository.desc[10] = new EmvMessage("Application Primary Account Number (PAN) Sequence Number");
+        emvRepository.desc[11] = new EmvMessage("Issuer Application Data");
+        emvRepository.desc[12] = new EmvMessage("Application Interchange Profile");
+        emvRepository.desc[13] = new EmvMessage("Application Transaction Counter (ATC)");
+        emvRepository.desc[14] = new EmvMessage("Cardholder Name");
+        emvRepository.desc[15] = new EmvMessage("Card Risk Management Data Object List 1 (CDOL1)");
+        emvRepository.desc[16] = new EmvMessage("Amount, Authorised (Numeric)");
+        emvRepository.desc[17] = new EmvMessage("Application Usage Control");
+        emvRepository.desc[18] = new EmvMessage("Application Usage Control");
+        emvRepository.desc[19] = new EmvMessage("Application Usage Control");
+        emvRepository.desc[20] = new EmvMessage("Application Usage Control");
+        emvRepository.desc[21] = new EmvMessage("Application Usage Control");
+        emvRepository.desc[22] = new EmvMessage("Application Usage Control");
+        emvRepository.desc[23] = new EmvMessage("Application Usage Control");
+        emvRepository.desc[23] = new EmvMessage("Application Usage Control");
+
+
         EmvService emvService = new EmvServiceImpl(emvRepository);
+        EmvService emvService1 = new EmvServiceImpl(emvRepository);
 
         emvService.showEmvMessage();
+        emvService1.showEmvMessage();
 
     }
 }
