@@ -70,6 +70,9 @@ public class EmvMessageServiceTest {
         emvRepository.desc[22] = new EmvMessage("Application Usage Control");
         emvRepository.desc[23] = new EmvMessage("Application Usage Control");
         emvRepository.desc[23] = new EmvMessage("Application Usage Control");
+        emvRepository.desc[24] = new EmvMessage("");
+        emvRepository.desc[24] = new EmvMessage("");
+        emvRepository.desc[24] = new EmvMessage("");
 
 
         EmvService emvService = new EmvServiceImpl(emvRepository);
